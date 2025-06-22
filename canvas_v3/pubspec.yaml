@@ -1,0 +1,63 @@
+name: flutter_drawing_board
+description: A collaborative drawing board application with guest and authenticated modes.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Design
+  cupertino_icons: ^1.0.2
+  flutter_colorpicker: ^1.1.0
+  flutter_svg: ^2.0.9
+  font_awesome_flutter: ^10.6.0
+
+  # File handling
+  file_saver: ^0.2.9
+  file_picker: ^10.1.9
+  image_picker: ^1.1.1
+
+  # Platform detection
+  universal_html: ^2.2.4
+  universal_platform: ^1.1.0
+
+  # Web
+  http: ^1.1.0
+
+  # Utilities
+  url_launcher: ^6.2.1
+
+  # Authentication & Database
+  supabase_flutter: ^2.0.0
+
+  # Local storage
+  shared_preferences: ^2.2.2
+
+  # State management (optional, but recommended)
+  provider: ^6.1.1
+
+  flutter_dotenv: ^5.1.0
+
+  # Add this for Liveblocks WebSocket
+  web_socket_channel: ^3.0.3
+  # Removed IoT-related dependencies:
+  # web_socket_channel: ^3.0.3  # Still needed for Supabase realtime
+  # mqtt_client: ^10.9.2  # Removed - IoT specific
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/svgs/
+    # - assets/icons/google.png  # Add this file if using Google sign-in
